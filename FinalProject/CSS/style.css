@@ -1,0 +1,346 @@
+body {
+
+    display: flex;
+
+    background-color: rgb(212, 219, 225);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.hero-header {
+    display: flex;
+    background-color: #ffffff;
+    width: 100%;
+
+    padding: 30px;
+
+
+}
+
+
+.classeraLogo {
+
+    width: 70px;
+    height: 70px;
+    display: flex;
+
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+aside {
+
+    background-color: white;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    box-shadow: 1px 0 0.2px rgba(241, 214, 214, 0.3);
+
+
+
+}
+
+.brand {
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 0;
+    gap: 10px;
+}
+
+.menu,
+.down {
+
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.menu li.nav-item a,
+.down li.nav-item a {
+
+    display: flex;
+    align-items: center;
+    gap: 10px !important;
+    padding: 15px 20px !important;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 500 !important;
+    width: 100%;
+    background: transparent;
+
+    cursor: pointer;
+    margin-bottom: 10px;
+
+
+
+}
+
+.down {
+
+    position: absolute;
+    bottom: 20px;
+
+    width: 100%;
+
+
+}
+
+.down a {
+
+    margin-bottom: 10px;
+
+
+}
+
+/* .menu li.nav-item li {
+
+    margin-right: 8px;
+} */
+
+
+
+ul {
+    list-style: none;
+}
+
+.dark-mode {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    gap: 10px
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 36px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    background-color: #ccc;
+    border-radius: 34px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.switch input:checked+.slider {
+    background-color: #0b5ed7;
+}
+
+.switch input:checked+.slider:before {
+    transform: translateX(16px);
+}
+
+.hero-header {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    width: calc(100% - 200px);
+    padding: 10px 30px;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 200px;
+
+    z-index: 10;
+    box-shadow: 1px 1px 0.2px rgba(128, 114, 114, 0.3);
+
+}
+
+
+
+.inputContainer {
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border-color: #c1c1c1;
+    border-width: 1px;
+    border-style: solid;
+
+}
+
+.input {
+
+    width: 400px;
+    max-width: 400px;
+    padding: 5px;
+    border: none;
+    background: transparent;
+    outline: none;
+}
+
+.right {
+
+
+    position: absolute;
+    right: 20px;
+    font-size: 1.2em;
+    color: #333;
+    cursor: pointer;
+
+
+}
+
+
+body.dark-mode,
+body.dark-mode aside,
+body.dark-mode .menu li.nav-item a,
+body.dark-mode header.hero-header,
+body.dark-mode header.hero-header .inputContainer .input,
+body.dark-mode header.hero-header .inputContainer,
+body.dark-mode .down li.nav-item a,
+body.dark-mode .search-input,
+body.dark-mode .input-column input,
+body.dark-mode .input-column select,
+body.dark-mode .input-column textarea,
+body.dark-mode .input-column .dropdown .options {
+    background-color: #121212;
+    color: #ffffff;
+
+
+}
+
+body.dark-mode .input-column .dropdown .options div:hover {
+    background-color: #333333;
+}
+
+
+/* body.dark-mode .menu li.nav-item a {
+    color: #ffffff;
+} */
+body.dark-mode aside,
+body.dark-mode header.hero-header .right,
+body.dark-mode .card,
+body.dark-mode .cardd,
+
+body.dark-mode .chart-box,
+body.dark-mode .file-card,
+body.dark-mode .file-card .file-info .file-count {
+    background-color: #1f1f1f;
+    color: #ffffff;
+}
+
+body.dark-mode .menu li.nav-item a,
+body.dark-mode .down li.nav-item a,
+body.dark-mode .status-card {
+    background-color: #1f1f1f;
+}
+
+
+body.dark-mode .menu li.nav-item a.active,
+body.dark-mode .menu li.nav-item a:hover {
+    background-color: #333333;
+}
+
+body.dark-mode header.hero-header {
+    background-color: #1f1f1f;
+}
+
+body.dark-mode .canvass,
+body.dark-mode .card .dark,
+body.dark-mode #table,
+
+body.dark-mode .main .center .textLabel .small {
+    color: white;
+    border-color: white;
+}
+
+body.dark-mode .main .center .interactions .extra {
+
+    color: #000000;
+}
+
+.note-text {
+    color: #000000
+}
+
+body.dark-mode .note-text {
+    color: white;
+}
+
+/* Push main content to the right of the sidebar */
+.main-content {
+    margin-left: 200px;
+    padding-top: 70px;
+    animation: slideup 0.9s ease-out;
+
+    /* padding-left: 10px; */
+
+    /* so header doesn't overlap */
+}
+
+@keyframes slideup {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 2;
+    }
+}
+
+.menu li.nav-item a:hover,
+.menu li.nav-item a.active {
+    color: #ffffff;
+    background: rgb(108, 179, 255);
+    border-radius: 10px;
+
+}
+
+.menu li.nav-item a.activee {
+    color: #ffffff;
+    background: rgb(108, 179, 255);
+    border-radius: 10px;
+
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intro | Classera</title>
+    <style>
+        body {
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+        }
+
+        img {
+            width: 60px;
+            height: 60px;
+
+
+            animation:
+                spin 0.8s infinite ease forwards,
+                zoomInFadeOut 0.7s;
+            animation-delay: 0s, 7s;
+            transform-origin: center;
+
+
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg) scale(1);
+            }
+
+
+
+
+            100% {
+                transform: rotate(360deg)scale(1.5);
+            }
+        }
+
+        @keyframes zoomInFadeOut {
+            0% {
+                transform: rotate(360deg) scale(1.9);
+                opacity: 1;
+            }
+
+            100% {
+                transform: rotate(360deg) scale(15);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <img src="images/image.png" alt="Classera logo" />
+    <script>
+        setTimeout(function () {
+            window.location.href = "test.html";
+        }, 7500);
+    </script>
+</body>
+
+</html>

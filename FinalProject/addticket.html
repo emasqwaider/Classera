@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Classera Company | Tickets</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/rating.css">
+    <link rel="stylesheet" href="CSS/ticket.css">
+    <link rel="stylesheet" href="CSS/addticket.css">
+
+
+
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <style>
+        a {
+
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <aside>
+        <div class="brand">
+            <img src="images/image.png" alt="classera" class="classeraLogo">
+            <h1>Classera</h1>
+        </div>
+        <div class="menu">
+            <ul>
+                <li class="nav-item">
+                    <a href="test.html">
+                        <i class='bx bx-menu'></i>
+                        Dashboard
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="ticketpage.html" class="activee">
+                        <i class='bx bx-check'></i>
+                        Tickets
+                    </a>
+
+                </li>
+                <li class="nav-item">
+                    <a href="inde.html">
+                        <i class='bx bx-user'></i>
+                        Customers
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="Organizations.html">
+                        <i class='bx bx-building-house'></i>
+                        Organizations
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="Reports.html">
+                        <i class='bx bx-file'></i>
+                        Reports
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="Settings.html">
+                        <i class='bx bx-cog'></i>
+                        Settings
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="down">
+            <ul>
+                <li class="nav-item">
+                    <a href="Sera.html">
+                        <i class='bx bx-message'></i>
+                        Sera
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <div class="dark-mode">
+                        <i class="bx bx-moon"></i> Dark Mode
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <header class="hero-header">
+        <div class="inputContainer">
+            <span class="bx bx-search"></span>
+            <input type="text" class="input" placeholder="Search..">
+        </div>
+        <div class="right">
+            <span class="bx bx-envelope"></span>
+            <span class="bx bx-bell"></span>
+            <span>|</span>
+            <span class="bx bx-user-circle"></span>
+            <span class="bx bx-caret-down"></span>
+        </div>
+    </header>
+
+
+
+    <div class="main">
+        <div class="header-section">
+            <div class="breadcrumb"> <i class="fa-solid fa-house"></i> › Tickets › Add
+                Ticket</div>
+
+            <h1>Add Ticket</h1>
+            <form id="ticketForm" method="get" action="ticketpage.html">
+                <div class="form-section">
+                    <label>Subject<br><small>Title of ticket</small></label>
+                    <div class="input-column"><input type="text" required></div>
+                </div>
+                <div class="form-section">
+                    <label>Description<br><small>Detailed description for the ticket</small></label>
+                    <div class="input-column"><textarea rows="5" placeholder="write a description" required></textarea>
+                    </div>
+                </div>
+                <div class="form-section">
+                    <label>Brand<br><small>Product on which issue happen</small></label>
+                    <div class="input-column">
+                        <div class="dropdown" id="brandDropdown">
+                            <div class="selected">Select Product</div>
+                            <div class="options">
+                                <div data-value="lms"><img class="avatarBrand" src="images/images.png">Learning
+                                    Management
+                                    System</div>
+                                <div data-value="edumail"><img class="avatarBrand" src="images/image.png">Edumail</div>
+                                <div data-value="cspaces"><img class="avatarBrand" src="images/download.png">Cspaces
+                                </div>
+                                <div data-value="cinspire"><img class="avatarBrand" src="images/1.png">Cinspire</div>
+                            </div>
+                        </div>
+                        <input type="hidden" name="brand" id="brandInput">
+                    </div>
+                </div>
+                <div class="form-section">
+                    <label>Module<br><small>Module on which issue happen</small></label>
+                    <div class="input-column">
+                        <div class="dropdown" id="moduleDropdown">
+                            <div class="selected">Select Module</div>
+                            <div class="options">
+                                <div data-value="Assesment">Assesment Module</div>
+                                <div data-value="Exams">Exams Module</div>
+                                <div data-value="Grades">Grades Management Module
+                                </div>
+                                <div data-value="Scores">Scores Module</div>
+                                <div data-value="Users">Users Management Module</div>
+
+                            </div>
+                        </div>
+
+
+                        <!-- <select required>
+                            <option value="">Select Module</option>
+                            <option>Assesment Module</option>
+                            <option>Exams Module</option>
+                            <option>Grades Management Module</option>
+                            <option>Scores Module</option>
+                            <option>Users Management Module</option>
+                        </select> -->
+                        <input type="hidden" name="module" id="moduleInput">
+                    </div>
+                </div>
+                <div class="actions">
+                    <button type="button" class="cancel">Cancel</button>
+                    <button type="submit" id="saveBtn" class="save">
+                        <span class="text">Save</span>
+                        <span class="spinner"></span>
+                        <span class="checkmark">✔</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+
+
+
+    </div>
+
+
+    <script>
+        const brandDropdown = document.getElementById("brandDropdown");
+        const selected = brandDropdown.querySelector(".selected");
+        const options = brandDropdown.querySelector(".options");
+        const hiddenInput = document.getElementById("brandInput");
+        const hiddennInput = document.getElementById("branddInput");
+
+        // Toggle display
+        selected.addEventListener("click", (e) => {
+            options.classList.toggle("show");
+        });
+
+        // Handle option click
+        options.querySelectorAll("div").forEach(option => {
+            option.addEventListener("click", e => {
+                selected.innerHTML = option.innerHTML;
+                hiddenInput.value = option.getAttribute("data-value");
+                // hiddennInput.value = option.getAttribute("data-value");
+                options.classList.remove("show");
+            });
+        });
+
+        // Click outside to close
+        window.addEventListener("click", e => {
+            if (!brandDropdown.contains(e.target)) {
+                options.classList.remove("show");
+            }
+        });
+        const moduleDropdown = document.getElementById("moduleDropdown");
+        const moduleSelected = moduleDropdown.querySelector(".selected");
+        const moduleOptions = moduleDropdown.querySelector(".options");
+        const moduleInput = document.getElementById("moduleInput");
+
+        moduleSelected.addEventListener("click", (e) => {
+            moduleOptions.classList.toggle("show");
+        });
+        moduleOptions.querySelectorAll("div").forEach(option => {
+            option.addEventListener("click", e => {
+                moduleSelected.innerHTML = option.innerHTML;
+                moduleInput.value = option.getAttribute("data-value");
+                moduleOptions.classList.remove("show");
+            });
+        });
+        window.addEventListener("click", e => {
+            if (!moduleDropdown.contains(e.target)) {
+                moduleOptions.classList.remove("show");
+            }
+        });
+    </script>
+
+
+    <script src="JS/dark.js"></script>
+    <script src="JS/save.js"></script>
+
+
+
+</body>
+
+</html>

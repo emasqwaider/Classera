@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Classera</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="CSS/rating.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            display: flex;
+            height: 100vh;
+            background-color: white;
+        }
+
+        .left,
+        .right {
+            flex: 1;
+            padding: 40px;
+        }
+
+        .left {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* padding: 100px; */
+            padding-left: 200px;
+
+        }
+
+        .left h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .left p {
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+
+        .left a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 500;
+        }
+
+        .form-group input {
+            width: 60%;
+            padding: 10px;
+            border: 1px solid #dcdcdc;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .remember {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .remember input {
+            margin-right: 8px;
+        }
+
+        .btn {
+            width: 60%;
+            padding: 12px;
+            background-color: #2563eb;
+            color: white !important;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .btn.google {
+            margin-top: 15px;
+            background-color: white;
+            border: 1px solid #ccc;
+            color: #444;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn.google img {
+            width: 18px;
+            margin-right: 10px;
+        }
+
+        .right {
+
+            margin: 30px;
+            background-color: #3b82f6;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 60px;
+            border-radius: 10px;
+
+        }
+
+
+
+        .right h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .right img {
+            max-width: 100%;
+            border-radius: 16px;
+        }
+
+        .right p {
+            font-size: 14px;
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="left">
+        <h1>C-HELP</h1> <br>
+        <h1>Welcome back</h1>
+        <p>New to C-help? <a href="#">create an account</a></p>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" />
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password" />
+        </div>
+        <div class="remember">
+            <input type="checkbox" id="remember" />
+            <label for="remember">Remember me</label>
+        </div>
+        <button class="btn"> <a href="intro.html" style="color: white;">Sign in</a></button>
+        <button class="btn google">
+            <a href="intro.html">
+                <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Google logo" />
+                Sign in with Google</a>
+        </button>
+    </div>
+
+    <div class="right">
+        <h2>The best platform for customer support</h2>
+
+        <img src="images/login.png" alt="Dashboard preview" />
+        <p>New entire experience & interface</p>
+    </div>
+</body>
+
+</html>

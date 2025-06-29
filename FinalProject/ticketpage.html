@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Classera Company | Tickets</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/rating.css">
+    <link rel="stylesheet" href="CSS/ticket.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <aside>
+        <div class="brand">
+            <img src="images/image.png" alt="classera" class="classeraLogo">
+            <h1>Classera</h1>
+        </div>
+        <div class="menu">
+            <ul>
+                <li class="nav-item">
+                    <a href="test.html" class="active">
+                        <i class='bx bx-menu'></i>
+                        Dashboard
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="ticketpage.html">
+                        <i class='bx bx-check'></i>
+                        Tickets
+                    </a>
+
+                </li>
+                <li class="nav-item">
+                    <a href="inde.html">
+                        <i class='bx bx-user'></i>
+                        Customers
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="Organizations.html">
+                        <i class='bx bx-building-house'></i>
+                        Organizations
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="Reports.html">
+                        <i class='bx bx-file'></i>
+                        Reports
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="Settings.html">
+                        <i class='bx bx-cog'></i>
+                        Settings
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="down">
+            <ul>
+                <li class="nav-item">
+                    <a href="Sera.html">
+                        <i class='bx bx-message'></i>
+                        Sera
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <div class="dark-mode">
+                        <i class="bx bx-moon"></i> Dark Mode
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider"></span>
+                        </label>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </aside>
+    <header class="hero-header">
+        <div class="inputContainer">
+            <span class="bx bx-search"></span>
+            <input type="text" class="input" placeholder="Search..">
+        </div>
+        <div class="right">
+            <span class="bx bx-envelope"></span>
+            <span class="bx bx-bell"></span>
+            <span>|</span>
+            <span class="bx bx-user-circle"></span>
+            <span class="bx bx-caret-down"></span>
+        </div>
+    </header>
+
+
+
+    <div class="main">
+        <div class="header-section">
+            <div class="breadcrumb"> <i class="fa-solid fa-house"></i> › Tickets</div>
+            <h1>Tickets</h1>
+
+            <div class="tabs">
+                <span class="tab active">Overview</span>
+                <span class="tab">Development</span>
+                <span class="tab">New Feature</span>
+                <span class="tab">FAQ</span>
+                <div class="top-actions">
+                    <div class="right-actions">
+                        <button class="export-btn">⬆ Export</button>
+                        <a href="addticket.html"> <button class="add-btn">+ Add Ticket</button></a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="status-cards">
+                <div class="status-card">
+                    <div class="text-group">
+                        <div class="title" style="color:#e11d48;">Open</div>
+                        <div class="number" style="color:#e11d48;">7</div>
+                    </div>
+                    <div class="bars">
+                        <div class="bar" style="background:#e11d48; height:42px;"></div>
+                        <div class="bar" style="background:#e11d48; height:60px;"></div>
+                        <div class="bar" style="background:#e11d48; height:98px;"></div>
+                        <div class="bar" style="background:#e11d48; height:76px;"></div>
+                        <div class="bar" style="background:#e11d48; height:44px;"></div>
+                    </div>
+                </div>
+                <div class="status-card">
+                    <div class="text-group">
+                        <div class="title" style="color:#598bf6;">In Progress</div>
+                        <div class="number" style="color:#598bf6;">15</div>
+                    </div>
+                    <div class="bars">
+                        <div class="bar" style="background:#598bf6; height:42px;"></div>
+                        <div class="bar" style="background:#598bf6; height:60px;"></div>
+                        <div class="bar" style="background:#598bf6; height:98px;"></div>
+                        <div class="bar" style="background:#598bf6; height:76px;"></div>
+                        <div class="bar" style="background:#598bf6; height:44px;"></div>
+                    </div>
+                </div>
+                <div class="status-card">
+                    <div class="text-group">
+                        <div class="title" style="color:#869d02;">Pending</div>
+                        <div class="number" style="color:#869d02;">44</div>
+                    </div>
+                    <div class="bars">
+                        <div class="bar" style="background:#869d02; height:42px;"></div>
+                        <div class="bar" style="background:#869d02; height:60px;"></div>
+                        <div class="bar" style="background:#869d02; height:98px;"></div>
+                        <div class="bar" style="background:#869d02; height:76px;"></div>
+                        <div class="bar" style="background:#869d02; height:44px;"></div>
+                    </div>
+                </div>
+                <div class="status-card">
+                    <div class="text-group">
+                        <div class="title" style="color:#6eff9e;">Resolved</div>
+                        <div class="number" style="color:#6eff9e;">4205</div>
+                    </div>
+                    <div class="bars">
+                        <div class="bar" style="background:#6eff9e; height:42px;"></div>
+                        <div class="bar" style="background:#6eff9e; height:60px;"></div>
+                        <div class="bar" style="background:#6eff9e; height:98px;"></div>
+                        <div class="bar" style="background:#6eff9e; height:76px;"></div>
+                        <div class="bar" style="background:#6eff9e; height:44px;"></div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+            <button class="filter-btn">☰ Filters</button>
+
+            <input type="text" id="searchInput" class="search-input" placeholder="🔍 Search in table..." />
+
+        </div>
+        <div class="center">
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Brand</th>
+                        <th>Requester</th>
+                        <th>Assignee</th>
+                        <th>Status</th>
+                        <th>Interactions</th>
+                        <th>Responsiveness</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody id="ticketTable">
+                    <tr>
+                        <td>225125</td>
+                        <td>
+                            <div class="avatarBrandBox">
+                                <img class="avatarBrand" src="images/images.png" alt="Brand Logo">
+                                <div class="textLabel">
+                                    <span>LMS</span>
+                                    <span class="small">Reports</span>
+                                </div>
+                            </div>
+                        </td>
+
+                        <td>
+                            <div class="avatarBrandBox">
+                                <img class="avatar" src="https://i.pravatar.cc/30?img=1" alt="Brand Logo">
+                                <div class="textLabel">
+                                    <span>Hadi Mohammed</span>
+                                    <span class="small">CTO at Classera</span>
+                                </div>
+                            </div>
+
+                        </td>
+                        <td>
+
+                            <div class="avatarBrandBox">
+                                <img class="avatar" src="https://i.pravatar.cc/30?img=2" alt="Brand Logo">
+                                <div class="textLabel">
+                                    <span>Osama Mohammed</span>
+                                    <span class="small">Support team at Classera</span>
+                                </div>
+                            </div>
+
+                        </td>
+                        <td><span class="badge blue">In Progress</span></td>
+
+
+                        <td>
+                            <div class="interactions">
+                                <img class="avatar" src="https://i.pravatar.cc/30?img=3" />
+                                <img class="avatar" src="https://i.pravatar.cc/30?img=4" />
+                                <img class="avatar" src="https://i.pravatar.cc/30?img=5" />
+                                <span class="extra">+3</span>
+                            </div>
+                        </td>
+                        <td>
+
+                            <div class="progress-container">
+
+                                <div class="progress-bar">
+                                    <div class="progress" style="width:30%;"></div>
+                                </div>
+                                <span class="percentage">30%</span>
+                            </div>
+
+
+
+                        </td>
+                        <td>Feb 22, 2022</td>
+                    </tr>
+                    <tr>
+                        <td>545655</td>
+                        <td>
+                            <div class="avatarBrandBox">
+                                <img class="avatarBrand" src="images/download.png" alt="Brand Logo">
+                                <div class="textLabel">
+                                    <span>Cpay</span>
+                                    <span class="small">Payment Module</span>
+                                </div>
+                            </div>
+                        </td>
+
+                        <td>
+                            <div class="avatarBrandBox">
+                                <img class="avatar" src="https://i.pravatar.cc/30?img=10" alt="Brand Logo">
+                                <div class="textLabel">
+                                    <span>Huthaifa Yousef</span>
+                                    <span class="small">Support team at Classera</span>
+                                </div>
+                            </div>
+
+                        </td>
+                        <td>
+
+                            <div class="avatarBrandBox">
+                                <img class="avatar" src="https://i.pravatar.cc/30?img=9" alt="Brand Logo">
+                                <div class="textLabel">
+                                    <span>Omar Alhariri</span>
+                                    <span class="small">Cpay team at Classera</span>
+                                </div>
+                            </div>
+
+                        </td>
+                        <td><span class="badge orange">Pending</span></td>
+
+
+                        <td>
+                            <div class="interactions">
+                                <img class="avatar" src="https://i.pravatar.cc/30?img=3" />
+                                <img class="avatar" src="https://i.pravatar.cc/30?img=4" />
+                                <img class="avatar" src="https://i.pravatar.cc/30?img=5" />
+                                <span class="extra">+1</span>
+                            </div>
+                        </td>
+                        <td>
+
+                            <div class="progress-container">
+
+                                <div class="progress-bar">
+                                    <div class="progress" style="width:98%;"></div>
+                                </div>
+                                <span class="percentage">98%</span>
+                            </div>
+
+
+
+                        </td>
+                        <td>Feb 21, 2022</td>
+                    </tr>
+                    <tr>
+                        <td>225126</td>
+                        <td>
+                            <div class="avatarBrandBox">
+                                <img class="avatarBrand" src="images/1.png" alt="Brand Logo">
+                                <div class="textLabel">
+                                    <span>LMS</span>
+                                    <span class="small">Course Modul</span>
+                                </div>
+                            </div>
+                        </td>
+
+                        <td>
+                            <div class="avatarBrandBox">
+                                <img class="avatar" src="https://i.pravatar.cc/30?img=1" alt="Brand Logo">
+                                <div class="textLabel">
+                                    <span>Yarub Ahmad</span>
+                                    <span class="small">Support team at Classera</span>
+                                </div>
+                            </div>
+
+                        </td>
+                        <td>
+
+                            <div class="avatarBrandBox">
+                                <img class="avatar" src="https://i.pravatar.cc/30?img=2" alt="Brand Logo">
+                                <div class="textLabel">
+                                    <span>Sara Alzenaty</span>
+                                    <span class="small">DevOps team at Classera</span>
+                                </div>
+                            </div>
+
+                        </td>
+                        <td><span class="badge green">Resolved</span></td>
+
+
+                        <td>
+                            <div class="interactions">
+                                <img class="avatar" src="https://i.pravatar.cc/30?img=3" />
+                                <img class="avatar" src="https://i.pravatar.cc/30?img=4" />
+                                <img class="avatar" src="https://i.pravatar.cc/30?img=5" />
+
+                            </div>
+                        </td>
+                        <td>
+
+                            <div class="progress-container">
+
+                                <div class="progress-bar">
+                                    <div class="progress" style="width:90%;"></div>
+                                </div>
+                                <span class="percentage">90%</span>
+                            </div>
+
+
+
+                        </td>
+                        <td>Feb 22, 2022</td>
+                    </tr>
+                    <tr>
+                        <td>225127</td>
+                        <td>
+                            <div class="avatarBrandBox">
+                                <img class="avatarBrand" src="images/reality-design-sketch-name.png" alt="Brand Logo">
+                                <div class="textLabel">
+                                    <span>Creality</span>
+                                    <span class="small">Activity Modul</span>
+                                </div>
+                            </div>
+                        </td>
+
+                        <td>
+                            <div class="avatarBrandBox">
+                                <img class="avatar" src="https://i.pravatar.cc/30?img=12" alt="Brand Logo">
+                                <div class="textLabel">
+                                    <span>Anas Ahmad</span>
+                                    <span class="small">Marketing team at Classera</span>
+                                </div>
+                            </div>
+
+                        </td>
+                        <td>
+
+                            <div class="avatarBrandBox">
+                                <img class="avatar" src="https://i.pravatar.cc/30?img=2" alt="Brand Logo">
+                                <div class="textLabel">
+                                    <span>Yassmeen Talal</span>
+                                    <span class="small">Creality team at Classera</span>
+                                </div>
+                            </div>
+
+                        </td>
+                        <td><span class="badge green">Resolved</span></td>
+
+
+                        <td>
+                            <div class="interactions">
+                                <img class="avatar" src="https://i.pravatar.cc/30?img=12" />
+                                <img class="avatar" src="https://i.pravatar.cc/30?img=13" />
+                                <img class="avatar" src="https://i.pravatar.cc/30?img=5" />
+                                <span class="extra">+5</span>
+                            </div>
+                        </td>
+                        <td>
+
+                            <div class="progress-container">
+
+                                <div class="progress-bar">
+                                    <div class="progress" style="width:82%;"></div>
+                                </div>
+                                <span class="percentage">82%</span>
+                            </div>
+
+
+
+                        </td>
+                        <td>Feb 22, 2022</td>
+                    </tr>
+                    <tr>
+                        <td>225128</td>
+                        <td>
+                            <div class="avatarBrandBox">
+                                <img class="avatarBrand" src="images/images.png" alt="Brand Logo">
+                                <div class="textLabel">
+                                    <span>LMS</span>
+                                    <span class="small">Payment Module</span>
+                                </div>
+                            </div>
+                        </td>
+
+                        <td>
+                            <div class="avatarBrandBox">
+                                <img class="avatar" src="https://i.pravatar.cc/30?img=1" alt="Brand Logo">
+                                <div class="textLabel">
+                                    <span>Hadi Mohammed</span>
+                                    <span class="small">CTO at Classera</span>
+                                </div>
+                            </div>
+
+                        </td>
+                        <td>
+
+                            <div class="avatarBrandBox">
+                                <img class="avatar" src="https://i.pravatar.cc/30?img=22" alt="Brand Logo">
+                                <div class="textLabel">
+                                    <span>Ramez Issaa</span>
+                                    <span class="small">Smile team at Classera</span>
+                                </div>
+                            </div>
+
+                        </td>
+                        <td><span class="badge orange">Pending</span></td>
+
+
+                        <td>
+                            <div class="interactions">
+                                <img class="avatar" src="https://i.pravatar.cc/30?img=13" />
+                                <img class="avatar" src="https://i.pravatar.cc/30?img=14" />
+
+                            </div>
+                        </td>
+                        <td>
+
+                            <div class="progress-container">
+
+                                <div class="progress-bar">
+                                    <div class="progress" style="width:90%;"></div>
+                                </div>
+                                <span class="percentage">90%</span>
+                            </div>
+
+
+
+                        </td>
+                        <td>Feb 22, 2022</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="pagination bottom">
+            <button class="export-btn">Previous</button>
+            <span class="centerpage">Page 1 of 50</span>
+            <button class="export-btn">Next</button>
+        </div>
+
+    </div>
+
+
+
+    <script src="JS/dark.js"></script>
+</body>
+
+</html>

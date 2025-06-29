@@ -1,0 +1,292 @@
+.card {
+
+    position: relative;
+    /* Needed for positioning the arrow */
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    min-width: 320px;
+    /* flex: 2; */
+    height: fit-content;
+    font-family: Arial, sans-serif;
+    padding-bottom: 20px;
+    /* display: flex; */
+
+    /* border: 2px dashed red; */
+
+
+
+}
+
+.cardd {
+
+    position: absolute;
+    /* Needed for positioning the arrow */
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    min-width: 500px;
+
+    width: 980px;
+    height: 205px;
+    font-family: Arial, sans-serif;
+    padding-bottom: 20px;
+    margin-top: 515px;
+    /* display: flex; */
+
+    /* border: 2px dashed red; */
+
+
+
+}
+
+.canvass {
+    width: inherit !important;
+    height: 10px !important;
+    position: relative;
+}
+
+.mix {
+    width: inherit !important;
+    /* height: 50px !important; */
+    position: relative;
+    /* padding-top: 550px; */
+
+
+
+}
+
+.repnseSize {
+    flex-grow: 1;
+    width: 100%;
+}
+
+.card h3 {
+    font-size: 1rem;
+    text-align: left;
+    margin-bottom: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+
+
+.card-contentAttach {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    border-style: solid;
+    box-shadow: 0 5px 6px rgba(1, 1, 1, 0.1);
+    border-width: 1px;
+    padding: 1px 10px;
+    margin: 10px;
+
+
+}
+
+.file-info {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+}
+
+.file-icon {
+    font-size: 20px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    color: white;
+    margin: 10px;
+
+}
+
+.doc-bg {
+    background-color: #4285f4;
+}
+
+/* Blue */
+.img-bg {
+    background-color: #00bcd4;
+}
+
+/* Cyan */
+.voice-bg {
+    background-color: #f9a825;
+}
+
+/* Amber */
+.video-bg {
+    background-color: #e53935;
+}
+
+/* Red */
+
+.file-title {
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.file-count {
+    font-size: 14px;
+    color: #555;
+}
+
+.file-size {
+    /* font-weight: bold; */
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-right: 5px;
+
+}
+
+.file-card {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 1px 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+
+.box {
+    padding: 12px;
+    border-radius: 10px;
+    background-color: #e6f0ff;
+    color: #4285f4;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.con {
+    display: flex;
+    flex-direction: column;
+}
+
+.con p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 5px;
+    color: #4285f4;
+}
+
+.conn p {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+    color: #4285f4;
+}
+
+.percentage {
+    font-size: 0.9rem;
+    color: green;
+}
+
+.percentage.decrease {
+    color: red;
+}
+
+.arrow {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    color: #0c69ff;
+    cursor: pointer;
+}
+
+.stats-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* flex-flow: column; */
+    gap: 10px;
+    align-items: flex-start;
+    margin-left: 8px;
+
+
+}
+
+.wide-overview {
+    width: 100%;
+    max-width: 650px;
+    flex: 1 1 100%;
+}
+
+
+.stat-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 30%;
+    padding: 20px;
+    min-width: 250px;
+}
+
+.stat-card h3 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.stat-value {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #3b82f6;
+    margin-bottom: 5px;
+}
+
+.stat-desc {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.attachment-details p {
+    margin: 5px;
+    font-size: 0.9rem;
+    color: #444;
+}
+
+.charts-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.chart-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 45%;
+    padding: 20px;
+    min-width: 250px;
+    margin-right: 10px;
+
+}
+
+.chart-card h3 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: #555;
+}
